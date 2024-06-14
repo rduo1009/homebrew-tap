@@ -7,6 +7,8 @@ class Pylaunchd < Formula
 
   head "https://github.com/glowinthedark/pylaunchd.git"
 
+  include Language::Python::Virtualenv
+
   depends_on "python@3.9"
   depends_on "qt5"
 
