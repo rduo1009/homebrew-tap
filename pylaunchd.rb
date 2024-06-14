@@ -11,20 +11,14 @@ class Pylaunchd < Formula
 
   depends_on "python@3.9"
   depends_on "qt5"
-
-  resource "pyqt5" do
-    url "https://files.pythonhosted.org/packages/4d/5d/b8b6e26956ec113ad3f566e02abd12ac3a56b103fcc7e0735e27ee4a1df3/PyQt5-5.15.10.tar.gz"
-    sha256 "d46b7804b1b10a4ff91753f8113e5b5580d2b4462f3226288e2d84497334898a"
-  end
+  depends_on "pyqt@5"
 
   def install
-    virtualenv_install_with_resources
     if build.head?
       bin.install "pylaunchd_gui.py" => "pylaunchd_gui"
     else
       libexec.install "pylaunchd_gui.py" => "pylaunchd_gui"
     end
-    (bin/"pylaunchd").write_env_script libexec/"pylaunchd_gui.py", PATH: "#{Formula["qt5"].opt_bin}:$PATH"
   end
 
   test do
