@@ -14,7 +14,7 @@ class Pylaunchd < Formula
   depends_on "pyqt@5"
 
   def install
-    bin.install "pylaunchd_gui.py" => "pylaunchd_gui"
+    bin.install "pylaunchd_gui.py" => "pylaunchd"
   end
 
   test do
