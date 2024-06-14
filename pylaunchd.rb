@@ -16,12 +16,11 @@ class Pylaunchd < Formula
   end
 
   def install
-    venv = virtualenv_create(libexec, "python3")
-    venv.pip_install resource("pyqt5")
+    virtualenv_install_with_resources
     if build.head?
-      system "git", "clone", "https://github.com/glowinthedark/pylaunchd.git", "."
+      bin.install "pylaunchd_gui.py" => "pylaunchd_gui"
     else
-      libexec.install "pylaunchd_gui.py"
+      libexec.install "pylaunchd_gui.py" => "pylaunchd_gui"
     end
     (bin/"pylaunchd").write_env_script libexec/"pylaunchd_gui.py", PATH: "#{Formula["qt5"].opt_bin}:$PATH"
   end
