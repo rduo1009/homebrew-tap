@@ -3,7 +3,7 @@ class Pylaunchd < Formula
   homepage "https://github.com/glowinthedark/pylaunchd"
   url "https://github.com/glowinthedark/pylaunchd/archive/refs/heads/main.zip"
   version "0.1"
-  sha256 "replace_with_the_actual_sha256_checksum"
+  sha256 "4d425fa899f974ba0ad6876a3f322dc267f046c269326e2bdc4539b14d09968a"
 
   head "https://github.com/glowinthedark/pylaunchd.git"
 
