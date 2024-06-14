@@ -6,6 +6,8 @@ class AdobeFontsRevealer < Formula
   url "https://github.com/kalaschnik/adobe-fonts-revealer.git", :using => :git, :branch => "main"
   version "latest"
 
+  head "https://github.com/kalaschnik/adobe-fonts-revealer.git", :using => :git, :branch => "main"
+
   depends_on "bash"
   depends_on "lcdf-typetools"
 
