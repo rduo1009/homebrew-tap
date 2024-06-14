@@ -14,11 +14,7 @@ class Pylaunchd < Formula
   depends_on "pyqt@5"
 
   def install
-    if build.head?
-      bin.install "pylaunchd_gui.py" => "pylaunchd_gui"
-    else
-      libexec.install "pylaunchd_gui.py" => "pylaunchd_gui"
-    end
+    bin.install "pylaunchd_gui.py" => "pylaunchd_gui"
   end
 
   test do
