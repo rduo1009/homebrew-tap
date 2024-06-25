@@ -7,5 +7,5 @@ if [ "$#" -eq 0 ]; then
 fi
 
 for arg in "$@"; do
-  brew deps --tree
+  brew deps --tree "$arg"
 done
