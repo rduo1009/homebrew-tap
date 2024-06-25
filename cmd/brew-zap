@@ -1,0 +1,11 @@
+#!/bin/bash
+# Script to uninstall a Homebrew formula or cask with the --zap option
+
+if [ "$#" -eq 0 ]; then
+  echo "Usage: brew zap <formula|cask> [<formula|cask> ...]"
+  exit 1
+fi
+
+for arg in "$@"; do
+  brew uninstall --zap "$arg"
+done
