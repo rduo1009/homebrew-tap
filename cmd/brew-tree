@@ -1,0 +1,11 @@
+#!/bin/bash
+# List installed with dependencies using --tree
+
+if [ "$#" -eq 0 ]; then
+  echo "Usage: brew tree <formula|cask> [<formula|cask> ...]"
+  exit 1
+fi
+
+for arg in "$@"; do
+  brew deps --tree
+done
