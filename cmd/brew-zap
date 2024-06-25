@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to uninstall a Homebrew formula or cask with the --zap option
+# Uninstall a Homebrew formula or cask with the --zap option
 
 if [ "$#" -eq 0 ]; then
   echo "Usage: brew zap <formula|cask> [<formula|cask> ...]"
