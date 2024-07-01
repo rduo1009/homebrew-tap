@@ -7,5 +7,5 @@ cask "gupax" do
   desc "GUI for mining Monero on P2Pool using XMRig"
   homepage "https://github.com/hinto-janai/gupax"
 
-  app "Gupax.app"
+  app "gupax-v#{version}-macos-x64-bundle/Gupax.app"
 end
