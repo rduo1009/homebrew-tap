@@ -6,9 +6,5 @@ cask "amphetamine-power-protect" do
   desc "Installer for Amphetamine Power Protect"
   homepage "https://github.com/x74353/Amphetamine-Power-Protect"
 
-<<<<<<< HEAD
   app "Install Power Protect.pkg"
-=======
-  app "Amphetamine Power Protect.app"
->>>>>>> c3def8115a29b89de374d71fd6dc108efbb05554
 end
